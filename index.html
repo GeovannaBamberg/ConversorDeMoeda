@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<script src="/conversor.js"></script>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Conversor de moedas</h1>
+                <img onclick="trocaTema()" id="iconTema" src="data:image/png;base64,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" />
+                
+            </div>
+        </header>
+
+        <main>
+            <h3>Escolha a moeda que deseja converter o real </h3>
+            <div class="opcoes">
+                <span>Valor em real:</span>
+                  <input type="number" id="valorDeEntrada">
+                <br>
+                  <span>Converter para:</span>
+
+                  <select name="moedas" id="moedas">
+                    <option value="dolar" id="dolar"> EUA Dolar</option>
+                    <option value="euro" id="euro" selected>Euro</option>
+                    <option value="won" id="won">Coreia do Sul Won</option>
+                  </select>
+    
+                  <div class="resposta" id="resposta"></div>
+                  <br>
+                  <button onclick="converter()">Converter</button>
+           
+            </div>
+    
+        </main>
+    </div>
+
+</body>
+</html>
